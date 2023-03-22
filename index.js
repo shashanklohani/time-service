@@ -24,6 +24,7 @@ app.get("/api/hello", function (req, res) {
 });
 
 app.get("/api/:date", (req, res) => {
+  console.log('Recieved')
   if (Number(req.params.date)) {
     req.params.date = Number(req.params.date);
   }
